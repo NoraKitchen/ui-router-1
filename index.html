@@ -1,0 +1,39 @@
+<html ng-app="my-app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="row">
+            <div class="col-md-12">
+                <button ui-sref="home">Home</button>
+                <button ui-sref="view2">View 2</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-12">
+                <ui-view></ui-view>
+                <div>
+                    <practice-component></practice-component>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/router.js"></script>
+    <script src="app/components/practice-component.js"></script>
+</body>
+
+</html>
